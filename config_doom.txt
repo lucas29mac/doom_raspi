@@ -1,0 +1,29 @@
+# See http://buildroot.org/manual.html#rootfs-custom
+# and http://elinux.org/RPiconfig for a description of config.txt syntax
+
+start_file=start.elf
+fixup_file=fixup.dat
+
+# Device tree to be used bu U-Boot:
+device_tree=bcm2835-rpi-b-plus.dtb
+#device_tree=bcm2835-rpi-zero-w.dtb
+kernel=u-boot.bin
+
+dtoverlay=vc4-fkms-v3d
+dtparam=audio=on
+hdmi_force_hotplug=1
+hdmi_drive=2
+
+# To use an external initramfs file
+#initramfs rootfs.cpio.gz
+
+# Disable overscan assuming the display supports displaying the full resolution
+# If the text shown on the screen disappears off the edge, comment this out
+disable_overscan=1
+enable_uart=1
+
+# How much memory in MB to assign to the GPU on Pi models having
+# 256, 512 or 1024 MB total memory
+gpu_mem_256=64
+gpu_mem_512=64
+gpu_mem_1024=128
