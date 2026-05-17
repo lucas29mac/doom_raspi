@@ -1,4 +1,3 @@
-````markdown
 # DOOM on Raspberry Pi B+ with Buildroot
 
 Embedded DOOM appliance running on Raspberry Pi B+ using:
@@ -35,11 +34,6 @@ Embedded DOOM appliance running on Raspberry Pi B+ using:
 
 ---
 
-````
-
-
-
----
 
 # Network Configuration
 
@@ -231,5 +225,4 @@ Users must provide their own IWAD files:
 * DOOM II
 * Freedoom
 
-```
 ```
